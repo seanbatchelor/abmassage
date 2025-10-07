@@ -3,84 +3,102 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       {/* Header/Navigation */}
       <header className="bg-white shadow-sm">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">AB Massage</h1>
-            <div className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-gray-900">Home</a>
-              <a href="#services" className="text-gray-700 hover:text-gray-900">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-gray-900">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-gray-900">Contact</a>
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div>
+            <div className="mb-2 md:mb-0">
+              <h1 className="text-3xl font-bold text-gray-900">AB Massage</h1>
+              <p className="text-sm text-gray-600 mt-1">Adrian Batchelor Massage Therapist, DRM</p>
             </div>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Welcome to AB Massage
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            {/* Content placeholder */}
-          </p>
-          <button className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
-            Book Now
-          </button>
+      <section id="home" className="bg-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image on the left */}
+            <div className="order-2 md:order-1">
+              <img 
+                src="/illustration-4.jpg" 
+                alt="Massage therapy" 
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+            
+            {/* Bio on the right */}
+            <div className="order-1 md:order-2">
+              <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                <p>
+                  Over 20 years experience as a massage therapist, based in Sydney, Australia.
+                </p>
+                <p>
+                  A great deal of this work has focused on the needs of elite athletes and dancers through a long association with the NSW Institute of Sport and professional dance companies.
+                </p>
+                <p>
+                  Treatments are available for clients of all ages and with all ranges of physical capacity.
+                </p>
+              </div>
+              <div>
+                <p>Rebates for all major health funds accepted | Work cover approved | Whitecoat profile | LinkedIn profile</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Our Services
-          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Service Card 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Service 1
+                Remedial & sports massage
               </h3>
               <p className="text-gray-600">
-                {/* Content placeholder */}
+                Includes the treatment of injuries and strains, the releasing of adhesions and scar tissue and maintenance of optimal function and range of movement.
               </p>
             </div>
             
             {/* Service Card 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Service 2
+                Restorative massage
               </h3>
               <p className="text-gray-600">
-                {/* Content placeholder */}
+                Integrating the functions of muscle, fascia, nerves and circulation to bring the body into balance
               </p>
             </div>
             
             {/* Service Card 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Service 3
+                Supplementary treatments
               </h3>
               <p className="text-gray-600">
-                {/* Content placeholder */}
+                Dry needling, gua sha and cupping are powerful therapies to support remedial and restorative treatments
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="bg-gray-100 py-20">
+      {/* Hours & Rates Section */}
+      <section id="rates" className="bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
-            About Us
+            Hours & Rates
           </h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gray-600 text-lg">
-              {/* Content placeholder */}
-            </p>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-8 space-y-4">
+              <p className="text-gray-700 text-lg">
+                Flexible appointment times available within and outside of standard business hours.
+              </p>
+              <p className="text-gray-700 text-lg">
+                Appointments at Inner West clinic, <span className="font-semibold">$120/hour</span> (concessions apply) or house calls available with an additional fee.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -89,47 +107,41 @@ function App() {
       <section id="contact" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Contact Us
+            Contact & Location
           </h2>
-          <div className="max-w-xl mx-auto">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                />
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Call</h3>
+                  <a href="tel:0411525809" className="text-indigo-600 hover:text-indigo-700 text-lg">
+                    0411 525 809
+                  </a>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                  <a href="mailto:adrianbatchelor@gmail.com" className="text-indigo-600 hover:text-indigo-700 text-lg">
+                    adrianbatchelor@gmail.com
+                  </a>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Visit</h3>
+                  <p className="text-gray-700 text-lg mb-1">Inner West Clinic</p>
+                  <p className="text-gray-700">27 Percival St</p>
+                  <p className="text-gray-700 mb-3">Lilyfield, Sydney 2040</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=27+Percival+St+Lilyfield+Sydney+2040" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 hover:text-indigo-700 font-medium"
+                  >
+                    View on Google Maps →
+                  </a>
+                </div>
               </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>
