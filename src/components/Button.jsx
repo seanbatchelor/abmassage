@@ -1,5 +1,5 @@
 function Button({ children, variant = 'primary', className = '', ...props }) {
-  const baseStyles = 'px-6 py-2 rounded-md text-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 tracking-wide';
+  const baseStyles = 'px-6 py-2 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
   
   const variants = {
     primary: 'text-white hover:opacity-90 focus:ring-[var(--color-primary)]',
