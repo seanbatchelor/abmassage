@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    overscroll-behavior: none;
+  }
+  
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     background-color: #cee3dd;
     font-size: 16px;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
   }
 
   :root {
