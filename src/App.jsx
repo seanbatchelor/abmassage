@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Sticky Header */}
-      <header className="sticky top-0 z-50">
+      <header className="md:sticky md:top-0 md:z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div>
             <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900">
@@ -20,9 +20,9 @@ function App() {
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Left Column - Fixed Image */}
-          <div className="hidden md:block">
-            <div className="fixed top-36 w-[calc((100vw-4rem)/2-1.5rem)] max-w-[calc((1280px-4rem)/2-1.5rem)]">
+          {/* Left Column - Fixed Image (Desktop) / Top Image (Mobile) */}
+          <div>
+            <div className="md:fixed md:top-36 md:w-[calc((100vw-4rem)/2-1.5rem)] md:max-w-[calc((1280px-4rem)/2-1.5rem)] mb-0 md:mb-0">
               <img
                 src="/illustration-4.jpg"
                 alt="Massage therapy"
